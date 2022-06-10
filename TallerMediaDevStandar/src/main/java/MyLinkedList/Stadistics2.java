@@ -1,23 +1,24 @@
+package MyLinkedList;
+
+import MyLinkedList.MyLinkedList;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.text.DecimalFormat;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Scanner;
+
 /**
  * Clase que calcula la media y la desviacion
  */
-public class Stadistics {
+public class Stadistics2 {
     private String file1;
-    private List<Double> lista1;
+    private MyLinkedList lista1;
 
-    /**
-     * Lectura del archivo
-     * @param file1
-     */
-    public Stadistics(String file1){
+    public Stadistics2(String file1){
         this.file1=file1;
-        lista1 = new LinkedList();
+        lista1 = new MyLinkedList();
         try {
             read();
 
@@ -25,7 +26,6 @@ public class Stadistics {
             e.printStackTrace();
         }
     }
-
     /**
      * Lectura del archivo y llamado a los metodos de la media y desviacion
      * @throws FileNotFoundException
@@ -43,13 +43,12 @@ public class Stadistics {
         System.out.println("El resultado de la desviacion estandar  es : "+ devStand(lista1,mean(lista1)));
 
     }
-
     /**
-     * Metodo usado con linked List
+     * Metodo usado con el fin de mi propia linked list y retornar la media
      * @param listado
      * @return La media en tipo Double
      */
-    public double mean(List<Double>listado){
+    public double mean(MyLinkedList listado){
         double cont = 0;
         for(int i =0;i<listado.size();i++){
             cont+=listado.get(i);
@@ -60,12 +59,12 @@ public class Stadistics {
     }
 
     /**
-     * Metodo usado con linked List
+     * Metodo usado con Mi linked list
      * @param listado
      * @param numMean
      * @return La desviacion estandar en tipo double
      */
-    public double devStand(List<Double> listado, double numMean){
+    public double devStand(MyLinkedList listado, double numMean){
         double cont = 0;
         double suma = 0;
         for(int i =0;i<listado.size();i++){
@@ -84,4 +83,3 @@ public class Stadistics {
 
 
 }
-

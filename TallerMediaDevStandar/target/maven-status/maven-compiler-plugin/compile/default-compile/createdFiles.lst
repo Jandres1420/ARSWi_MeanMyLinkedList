@@ -1,2 +1,5 @@
-ClassNameTest.class
-ClassNameTest$1.class
+MyLinkedList\MyLinkedList.class
+MainWithNormalLinkedList.class
+MyLinkedList\MainWithMyLinkedList.class
+MyLinkedList\Stadistics2.class
+MyLinkedList\Node.class
