@@ -14,6 +14,7 @@ la cual tiene los principales metodos llamados `mean` y `devStand` los cuales ge
 ## Description of class diagram 2.0
 Por otro lado se creo una propia `LinkedList` que está ubicado en el directorio `src.main.java.MyLinkedList`
 ![](img/dire.png)
+
 Donde hay una clase con el metodo main llamada `MainWithMyLinkedList` , que hace llamado a la clase `Stadistics2` que usa nuestra linkedList
 que es ayudada por una clase `Node` para poder guardar los datos y además saber su posición con los métodos `get()` y `size` y así sacar la media
 y deviación estandar.
