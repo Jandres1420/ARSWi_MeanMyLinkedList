@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class main {
+public class MainWithNormalLinkedList {
 
     public static void main(String[] args) {
         String entradaTeclado = "";
@@ -8,4 +8,6 @@ public class main {
         entradaTeclado = entradaEscaner.nextLine ();
         Stadistics stadistics = new Stadistics(entradaTeclado);
     }
+
+
 }
